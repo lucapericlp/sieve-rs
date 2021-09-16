@@ -1,0 +1,14 @@
+[package]
+name = "sieve-rs"
+version = "0.1.0"
+authors = ["Luca Peric <lucaperic.lp@gmail.com>"]
+path = "src/main.rs"
+edition = "2018"
+
+[lib]
+name = "sieve_rs"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.14.5"
+features = ["extension-module"]

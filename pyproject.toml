@@ -1,0 +1,24 @@
+[project]
+name = "sieve-rs"
+repository = "https://github.com/lucapericlp/sieve-rs"
+
+[build-system]
+build-backend = "maturin"
+requires = ["maturin>=0.11.2,<0.12"]
+
+[tool.poetry]
+name = "sieve_rs"
+version = "0.1.0"
+description = ""
+license = "Private"
+authors = ["me"]
+readme = 'README.md'
+
+[tool.maturin]
+sdist-include = ["Cargo.lock"]
+strip = true
+
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38']
+include = '\.pyi?$'
